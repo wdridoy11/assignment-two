@@ -1,0 +1,135 @@
+/*----------------------------------------
+            Common css
+---------------------------------------- */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --color: #131313;
+   --darkOrange: #FF900E;
+   --textColor: #727272;
+   --white: #ffffff;
+   --black: #000000;
+}
+
+body {
+   font-family: 'Work Sans', sans-serif;
+}
+
+img {
+   max-width: 100%;
+}
+
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.section-title {
+   font-size: 45px;
+   font-weight: 700;
+   line-height: 53px;
+}
+
+.primary-btn {
+   font-size: 20px;
+   font-weight: 600;
+   background: var(--darkOrange);
+   color: var(--white);
+   padding: 20px 25px;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.primary-btn:hover {
+   background: var(--black);
+}
+
+/*----------------------------------------
+            Banner section style
+---------------------------------------- */
+
+#banner {}
+
+.banner-area {}
+
+/*----------------------------------------
+         features section style
+---------------------------------------- */
+#features {
+   padding: 85px 0 65px 0;
+}
+
+.features-area {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   gap: 73px;
+}
+
+.features-img {}
+
+.features-img-box {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+}
+
+.features-team-img {
+   width: 100%;
+}
+
+.features-content {}
+
+.features-title {}
+
+.quick-list {
+   font-weight: 500;
+   color: var(--textColor);
+}
+
+.section-title-color {
+   color: var(--darkOrange);
+}
+
+.features-description {
+   font-size: 16px;
+   line-height: 26px;
+   font-weight: 400;
+   color: var(--textColor);
+   margin: 24px 0 32px 0;
+}
+
+/*----------------------------------------
+         Responsive  style
+---------------------------------------- */
+@media screen and (max-width:992px) {
+
+   /* Features section responsive */
+   #features {
+      padding: 85px 10px 65px 10px;
+   }
+
+   .features-area {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .features-img-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+   }
+}
+
+@media screen and (max-width:576px) {
+
+   /* Features section responsive */
+   .features-img-box {
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
